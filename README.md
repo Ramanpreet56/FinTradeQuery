@@ -17,4 +17,14 @@ Initially for the web view , my plan was to implement a more granular view with 
 For PDF view , Currently we have used a Text File as a Template to print the PDF . This picking up of a Text file and replacing placeholder represents templating ( Very important for Financial Reporting). I could have expanded this on further levels (eg Updating Static / Dynamic Data from Text files  being delivered to us) and so on and so forth if required.
 
 
+To run this : Do a git clone : 
 
+git clone https://github.com/Ramanpreet56/FinTradeQuery.git
+
+Then from the app directory run:
+
+python3 app.py
+
+The result output PDF would be available in the appdir . 
+
+Trades are available only for account number 1,2,3 and for rest there would be no trade data.
