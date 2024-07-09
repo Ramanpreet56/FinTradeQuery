@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Online Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Data</h1>
+    <div>
+        <p>Account ID: {{ account_id }}</p>
+        <p>Name: {{ name }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Entity: {{ entity }}</p>
+    </div>
+    <hr>
+    <h2>Trade Data</h2>
+    {% if trades %}
+    <table>
+        <thead>
+            <tr>
+                <th>Trade ID</th>
+                <th>Account ID</th>
+                <th>Entity</th>
+                <th>Portfolio</th>
+                <th>Counterpart</th>
+                <th>Trade Date</th>
+                <th>Trade Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for trade in trades %}
+            <tr>
+                <td>{{ trade[0] }}</td>
+                <td>{{ trade[1] }}</td>
+                <td>{{ trade[2] }}</td>
+                <td>{{ trade[3] }}</td>
+                <td>{{ trade[4] }}</td>
+                <td>{{ trade[5] }}</td>
+                <td>{{ trade[6] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No trade data available.</p>
+    {% endif %}
+</body>
+</html>

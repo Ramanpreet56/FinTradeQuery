@@ -1,0 +1,11 @@
+Thanks for being the esteemed user of our Bank.<br/>
+<br/>
+Please verify your Details:<br/>
+<br/>
+Name:{NAME}<br/><br/>
+Mobile:{PHONE}<br/><br/>
+AccountID:{ACCOUNTID}<br/><br/>
+Entity:{ENTITY}<br/><br/>
+<br/><br/>
+Trades Executed on your behalf:<br/><br/><br/><br/>
+
