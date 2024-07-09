@@ -1,7 +1,6 @@
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Table
 from reportlab.lib.styles import getSampleStyleSheet
-from financial_entities import Text, Table as FinancialTable  # Alias Table to avoid conflict
 from reportlab.lib import colors
 
 class FinancialReportGenerator:

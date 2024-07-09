@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, render_template
 from financial_report_controller import FinancialReportController
 from financial_report_generator import FinancialReportGenerator
 
